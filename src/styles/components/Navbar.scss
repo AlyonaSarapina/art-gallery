@@ -1,0 +1,28 @@
+.navbar {
+  background: #fff;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 5px;
+
+  &_logo {
+    height: 35px;
+  }
+
+  &_link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar_logo {
+    height: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,144 @@
+.gallery-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+
+  select {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+      linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: right 15px top 1em, right 10px top 1em;
+    background-size: 5px 5px, 5px 5px;
+    font-size: 14px;
+  }
+}
+
+.action-buttons {
+  margin: 0 auto;
+  justify-items: center;
+
+  button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: darkgray;
+    }
+  }
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .gallery-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-actions {
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+
+    > * {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  .artwork-grid {
+    padding: 0;
+  }
+}
+
+.empty-page {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}

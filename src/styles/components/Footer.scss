@@ -1,0 +1,46 @@
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+
+  p {
+    margin: 0;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #4caf50;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #00f;
+}
